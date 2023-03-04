@@ -121,7 +121,7 @@ console.log(state);
         {/* DESCRIPTION  */}
         <div className="description">
           <h2>Play Lottery to Win Ethers</h2>
-          <h3>Ticket Price - 1 ether</h3>
+          <h3>Ticket Price - 0.001 Matic</h3>
         </div>
         <div className="enter-div">
           <h2>Click Enter to participate</h2>
