@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
-// Import ABI Code to interact with smart contract
-import Lottery from './artifacts/contracts/Lottery.sol/Lottery.json'
 import './App.css'
 
+// Import contract address and ABI Code to interact with smart contract
 import { contractAdd,contractABI } from './utils/constants'
 
 function App() {
