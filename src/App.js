@@ -4,7 +4,7 @@ import { ethers } from 'ethers'
 import Lottery from './artifacts/contracts/Lottery.sol/Lottery.json'
 import './App.css'
 
-const contractAdd = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
+import { contractAdd,contractABI } from './utils/constants'
 
 function App() {
   
@@ -28,7 +28,7 @@ function App() {
         })
         const provider = new ethers.providers.Web3Provider(ethereum)
         const signer = provider.getSigner()
-        const contract = new ethers.Contract(contractAdd, Lottery.abi, signer)
+        const contract = new ethers.Contract(contractAdd, contractABI, signer)
         window.ethereum.on('chainChanged',()=>{
           window.location.reload()
         })
