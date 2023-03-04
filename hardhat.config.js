@@ -7,7 +7,7 @@ module.exports = {
     artifacts:'./src/artifacts'
   },
   networks:{
-    goerli:{
+    mumbai:{
       url: process.env.RPC_URL,
       accounts: [process.env.ACCOUNT]
     },hardhat:{

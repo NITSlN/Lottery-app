@@ -102,8 +102,13 @@ function App() {
 
   useEffect(() => {
     connectWallet()
+  }, [])
+
+  useEffect(() => {
     getWinner()
   }, [])
+
+  
 
 console.log(state);
   return (
